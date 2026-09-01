@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+<img src="../assets/images/Bushinsky_Seth.jpg" alt="Alt text" style="width: 300px; float: left; margin-right: 20px;">
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+I started as an Assistant Professor at the University of Hawai’i at Mānoa in July 2019. My research interests are centered around biogeochemical cycles in the ocean, especially the processes that control oxygen and carbon exchange between the ocean and atmosphere.
 
-## Commands
+I work across a number of scales – from understanding and improving sensors, to process level understanding of how biological and physical mechanisms impact ocean biogeochemistry, to quantifying regional and global air-sea fluxes. This field requires an understanding of chemistry, biology, and physics (or good collaborators who do) which is what makes it so challenging and fun.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<!-- ![Image title](https:///https://hi-cycles.org/assets/images/Bushinsky_Seth.jpg){ align=left }
+![Alt text](../assets/images/Bushinsky_Seth.jpg) -->
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
