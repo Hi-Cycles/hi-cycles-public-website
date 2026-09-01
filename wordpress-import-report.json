@@ -1,0 +1,112 @@
+{
+  "source": "hi-cyclesgroup.WordPress.2026-09-01.xml",
+  "generatedAt": "2026-09-01T23:54:58.764Z",
+  "pageCount": 15,
+  "pages": [
+    {
+      "id": 9,
+      "title": "Research",
+      "slug": "research",
+      "parentId": 0,
+      "route": "/research"
+    },
+    {
+      "id": 13,
+      "title": "Publications",
+      "slug": "publications",
+      "parentId": 0,
+      "route": "/publications"
+    },
+    {
+      "id": 14,
+      "title": "People",
+      "slug": "people",
+      "parentId": 0,
+      "route": "/people"
+    },
+    {
+      "id": 15,
+      "title": "News",
+      "slug": "news",
+      "parentId": 0,
+      "route": "/news"
+    },
+    {
+      "id": 29,
+      "title": "Southern Ocean oxygen fluxes",
+      "slug": "southern-ocean-oxygen-fluxes",
+      "parentId": 9,
+      "route": "/research/southern-ocean-oxygen-fluxes"
+    },
+    {
+      "id": 34,
+      "title": "Biogeochemical Argo floats",
+      "slug": "biogeochemical-argo-floats",
+      "parentId": 9,
+      "route": "/research/biogeochemical-argo-floats"
+    },
+    {
+      "id": 36,
+      "title": "Oxygen sensor calibration",
+      "slug": "oxygen-sensor-calibration",
+      "parentId": 9,
+      "route": "/research/oxygen-sensor-calibration"
+    },
+    {
+      "id": 38,
+      "title": "Air-sea gas exchange",
+      "slug": "air-sea-gas-exchange",
+      "parentId": 9,
+      "route": "/research/air-sea-gas-exchange"
+    },
+    {
+      "id": 111,
+      "title": "",
+      "slug": "111-2",
+      "parentId": 0,
+      "route": "/111-2"
+    },
+    {
+      "id": 218,
+      "title": "Teaching / Service",
+      "slug": "teaching",
+      "parentId": 0,
+      "route": "/teaching"
+    },
+    {
+      "id": 381,
+      "title": "Southern Ocean air-sea carbon dioxide fluxes",
+      "slug": "southern-ocean-air-sea-carbon-dioxide-fluxes",
+      "parentId": 9,
+      "route": "/research/southern-ocean-air-sea-carbon-dioxide-fluxes"
+    },
+    {
+      "id": 676,
+      "title": "New modules for OCN 201 developed, in part, based on my funded research projects",
+      "slug": "new-modules-for-ocn-201-developed-in-part-based-on-my-funded-research-projects",
+      "parentId": 218,
+      "route": "/teaching/new-modules-for-ocn-201-developed-in-part-based-on-my-funded-research-projects"
+    },
+    {
+      "id": 701,
+      "title": "Code",
+      "slug": "code",
+      "parentId": 0,
+      "route": "/code"
+    },
+    {
+      "id": 707,
+      "title": "Outreach",
+      "slug": "outreach",
+      "parentId": 0,
+      "route": "/outreach"
+    },
+    {
+      "id": 821,
+      "title": "Funded projects:",
+      "slug": "funded-projects",
+      "parentId": 0,
+      "route": "/funded-projects"
+    }
+  ]
+}
