@@ -1,7 +1,0 @@
-site_url: https://hi-cycles.org/
-site_name: HI-Cycles, Global Ocean Biogeochemistry
-
-markdown_extensions:
-  - attr_list
-  - md_in_html
-  # - pymdownx.blocks.caption
