@@ -1,12 +1,7 @@
 ---
-title: "Biogeochemical Argo floats"
-slug: "biogeochemical-argo-floats"
-originalLink: "https://bushinskyoceanlab.org/research/biogeochemical-argo-floats/"
-wordpressId: 34
-route: "/research/biogeochemical-argo-floats"
----
-
-<p><a href="http://www.argo.ucsd.edu/How_Argo_floats.html">Argo floats</a>&nbsp;are autonomous profiling vehicles that adjust their buoyancy to profile once every ten days, spending the majority of their time at ~1000 m depth before diving to 2000 m, then rising to the ocean surface while measuring water and transmitting their data via satellite.&nbsp; Biogeochemical sensors are being added to select Argo floats in ever increasing numbers.&nbsp; Much of my work has focused on improving biogeochemical sensor performance and how to use these novel data to better understand and constrain cycling and fluxes of tracers such as oxygen and carbon.</p>
+import Layout from "../layouts/Layout.astro";
+const title = "Biogeochemical Argo floats";
+const html = `<p><a href="http://www.argo.ucsd.edu/How_Argo_floats.html">Argo floats</a>&nbsp;are autonomous profiling vehicles that adjust their buoyancy to profile once every ten days, spending the majority of their time at ~1000 m depth before diving to 2000 m, then rising to the ocean surface while measuring water and transmitting their data via satellite.&nbsp; Biogeochemical sensors are being added to select Argo floats in ever increasing numbers.&nbsp; Much of my work has focused on improving biogeochemical sensor performance and how to use these novel data to better understand and constrain cycling and fluxes of tracers such as oxygen and carbon.</p>
 
 
 
@@ -26,4 +21,11 @@ route: "/research/biogeochemical-argo-floats"
 
 
 
-<p>This model can also be used to <a href="https://bushinskyoceanlab.org/research/air-sea-gas-exchange/" data-type="page" data-id="38">test gas exchange parameterizations </a>using in situ measurements of relatively abiotic gases, such as nitrogen and argon. </p>
+<p>This model can also be used to <a href="https://bushinskyoceanlab.org/research/air-sea-gas-exchange/" data-type="page" data-id="38">test gas exchange parameterizations </a>using in situ measurements of relatively abiotic gases, such as nitrogen and argon. </p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

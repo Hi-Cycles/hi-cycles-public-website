@@ -1,12 +1,7 @@
 ---
-title: "Outreach"
-slug: "outreach"
-originalLink: "https://bushinskyoceanlab.org/outreach/"
-wordpressId: 707
-route: "/outreach"
----
-
-<h2 class="wp-block-heading">2023 SOEST Open House</h2>
+import Layout from "../layouts/Layout.astro";
+const title = "Outreach";
+const html = `<h2 class="wp-block-heading">2023 SOEST Open House</h2>
 
 
 
@@ -20,4 +15,11 @@ route: "/outreach"
 
 
 
-<h2 class="wp-block-heading">Posters</h2>
+<h2 class="wp-block-heading">Posters</h2>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

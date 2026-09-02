@@ -1,12 +1,7 @@
 ---
-title: "Oxygen sensor calibration"
-slug: "oxygen-sensor-calibration"
-originalLink: "https://bushinskyoceanlab.org/research/oxygen-sensor-calibration/"
-wordpressId: 36
-route: "/research/oxygen-sensor-calibration"
----
-
-<p>While at the University of Washington, I developed a mooring based air-calibration system for oxygen optodes (<a href="https://bushinskyoceanlab.org/wp-content/uploads/2019/11/Bushinsky-Emerson-2013-Marine-Chemistry.pdf">Bushinsky and Emerson, 2013</a>).  This system relied on pumping atmospheric air down to the sub-surface optode housing to calibrate the sensors once per day. </p>
+import Layout from "../layouts/Layout.astro";
+const title = "Oxygen sensor calibration";
+const html = `<p>While at the University of Washington, I developed a mooring based air-calibration system for oxygen optodes (<a href="https://bushinskyoceanlab.org/wp-content/uploads/2019/11/Bushinsky-Emerson-2013-Marine-Chemistry.pdf">Bushinsky and Emerson, 2013</a>).  This system relied on pumping atmospheric air down to the sub-surface optode housing to calibrate the sensors once per day. </p>
 
 
 
@@ -22,4 +17,11 @@ route: "/research/oxygen-sensor-calibration"
 
 
 
-<figure class="wp-block-image size-large"><img src="https://bushinskyoceanlab.org/wp-content/uploads/Screen-Shot-2018-03-29-at-9.20.38-PM-1024x665.png" alt="" class="wp-image-370"/><figcaption>In situ oxygen sensor drift measured using air calibration</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://bushinskyoceanlab.org/wp-content/uploads/Screen-Shot-2018-03-29-at-9.20.38-PM-1024x665.png" alt="" class="wp-image-370"/><figcaption>In situ oxygen sensor drift measured using air calibration</figcaption></figure>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

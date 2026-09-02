@@ -1,12 +1,7 @@
 ---
-title: "Air-sea gas exchange"
-slug: "air-sea-gas-exchange"
-originalLink: "https://bushinskyoceanlab.org/research/air-sea-gas-exchange/"
-wordpressId: 38
-route: "/research/air-sea-gas-exchange"
----
-
-<p>The parameterization of air-sea gas fluxes has long been an area of study in oceanography.&nbsp; Standard parameterizations used in most climate models have a single diffusive term that scales as a function of wind speed.&nbsp; However, relatively insoluble gases are impacted by breaking waves that inject bubbles into the ocean.&nbsp; Oxygen, argon, and nitrogen are all substantially impacted by bubble injection and many air-sea flux parameterizations include bubble components in an attempt to deal with this issue.</p>
+import Layout from "../layouts/Layout.astro";
+const title = "Air-sea gas exchange";
+const html = `<p>The parameterization of air-sea gas fluxes has long been an area of study in oceanography.&nbsp; Standard parameterizations used in most climate models have a single diffusive term that scales as a function of wind speed.&nbsp; However, relatively insoluble gases are impacted by breaking waves that inject bubbles into the ocean.&nbsp; Oxygen, argon, and nitrogen are all substantially impacted by bubble injection and many air-sea flux parameterizations include bubble components in an attempt to deal with this issue.</p>
 
 
 
@@ -18,4 +13,11 @@ route: "/research/air-sea-gas-exchange"
 
 
 
-<p>In the summer of 2017 I supervised&nbsp;<a href="https://environment.princeton.edu/interns-2017/rebecca_barber">Rebecca Barber</a>, a Princeton Environmental Institute summer intern who analyzed output from an ocean model that included the Liang et al. (2013) parametrization.&nbsp; She compared this output to the standard gas flux parameterization that did not include bubbles and found a significant improvement in modeled noble gases.&nbsp;&nbsp;</p>
+<p>In the summer of 2017 I supervised&nbsp;<a href="https://environment.princeton.edu/interns-2017/rebecca_barber">Rebecca Barber</a>, a Princeton Environmental Institute summer intern who analyzed output from an ocean model that included the Liang et al. (2013) parametrization.&nbsp; She compared this output to the standard gas flux parameterization that did not include bubbles and found a significant improvement in modeled noble gases.&nbsp;&nbsp;</p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

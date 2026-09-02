@@ -1,12 +1,7 @@
 ---
-title: "Research"
-slug: "research"
-originalLink: "https://bushinskyoceanlab.org/research/"
-wordpressId: 9
-route: "/research"
----
-
-<h2 class="wp-block-heading"><a href="https://bushinskyoceanlab.org/funded-projects/" data-type="page" data-id="821">List of funded projects</a></h2>
+import Layout from "../layouts/Layout.astro";
+const title = "Research";
+const html = `<h2 class="wp-block-heading"><a href="https://bushinskyoceanlab.org/funded-projects/" data-type="page" data-id="821">List of funded projects</a></h2>
 
 
 
@@ -98,4 +93,11 @@ route: "/research"
 
 
 
-<p class=""></p>
+<p class=""></p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

@@ -1,12 +1,7 @@
 ---
-title: "Publications"
-slug: "publications"
-originalLink: "https://bushinskyoceanlab.org/publications/"
-wordpressId: 13
-route: "/publications"
----
-
-<p class=""><a href="https://scholar.google.com/citations?user=tkjrfEAAAAAJ&hl=en">Google Scholar profile</a>. <a href="https://bushinskyoceanlab.org/wp-content/uploads/BushinskySM_CV_website.pdf">CV</a>. </p>
+import Layout from "../layouts/Layout.astro";
+const title = "Publications";
+const html = `<p class=""><a href="https://scholar.google.com/citations?user=tkjrfEAAAAAJ&hl=en">Google Scholar profile</a>. <a href="https://bushinskyoceanlab.org/wp-content/uploads/BushinskySM_CV_website.pdf">CV</a>. </p>
 
 
 
@@ -114,11 +109,11 @@ route: "/publications"
 
 
 
-<p class="">Rodgers, K. B., J. Schwinger, A. J. Fassbender, P. Landschu ̈tzer, R. Yamaguchi, H. Fren- zel, K. Stein, J. D. Mu ̈ller, N. Goris, S. Sharma, <strong>S. Bushinsky</strong>, T.-T.-T. Chau, M. Gehlen, M. A. Gallego, L. Gloege, L. Gregor, N. Gruber, J. Hauck, Y. Iida, M. Ishii, L. Keppler, J.-E. Kim, S. Schlunegger, J. Tjiputra, K. Toyama,ˇ`P. Vaittinada Ayar, and A. Velo (2023). Seasonal Variability of the Surface Ocean Carbon Cycle: A Synthesis. <em>Global Biogeochemical Cycles </em>37(9), e2023GB007798. DOI: <a href="https://doi.org/10.1029/2023GB007798">10.1029/2023GB007798</a></p>
+<p class="">Rodgers, K. B., J. Schwinger, A. J. Fassbender, P. Landschu ̈tzer, R. Yamaguchi, H. Fren- zel, K. Stein, J. D. Mu ̈ller, N. Goris, S. Sharma, <strong>S. Bushinsky</strong>, T.-T.-T. Chau, M. Gehlen, M. A. Gallego, L. Gloege, L. Gregor, N. Gruber, J. Hauck, Y. Iida, M. Ishii, L. Keppler, J.-E. Kim, S. Schlunegger, J. Tjiputra, K. Toyama,ˇ\`P. Vaittinada Ayar, and A. Velo (2023). Seasonal Variability of the Surface Ocean Carbon Cycle: A Synthesis. <em>Global Biogeochemical Cycles </em>37(9), e2023GB007798. DOI: <a href="https://doi.org/10.1029/2023GB007798">10.1029/2023GB007798</a></p>
 
 
 
-<p class="">Sarmiento, J.L., Johnson, K.S., Arteaga, L.A., <strong>Bushinsky, S.M.</strong>, Cullen, H.M., Gray,<br>A.R., Hotinski, R.M., Maurer, T.L., Mazloff, M.R., Riser, S.C., Russell, J.L., Schofield, O.M., Talley, L.D., The Southern Ocean Carbon and Climate Observations and Modeling (SOCCOM) project: A review, Progress in Oceanography (2023), doi: <a href="https://doi.org/10.1016/j.pocean.2023.103130">https://doi.org/10.1016/j.pocean.2023.103130</a></p>
+<p class="">Sarmiento, J.L., Johnson, K.S., Arteaga, L.A., <strong>Bushinsky, S.M.</strong>, Cullen, H.M., Gray,<br />A.R., Hotinski, R.M., Maurer, T.L., Mazloff, M.R., Riser, S.C., Russell, J.L., Schofield, O.M., Talley, L.D., The Southern Ocean Carbon and Climate Observations and Modeling (SOCCOM) project: A review, Progress in Oceanography (2023), doi: <a href="https://doi.org/10.1016/j.pocean.2023.103130">https://doi.org/10.1016/j.pocean.2023.103130</a></p>
 
 
 
@@ -258,4 +253,11 @@ route: "/publications"
 
 
 
-<p class="">Baglole, C. J., <strong>Bushinsky, S. M.</strong>, Garcia, T. M., Kode, A., Rahman, I., Sime, P. J., & Phipps, R. P. (2006). Differential induction of apoptosis by cigarette smoke extract in primary human lung fibroblast strains: implications for emphysema.&nbsp;<em>Am J Physiol Cell Mol Physiol</em>,&nbsp;<em>291</em>, L19–L29. <a href="https://doi.org/10.1152/ajplung.00306.2005">https://doi.org/10.1152/ajplung.00306.2005</a>. <a href="https://bushinskyoceanlab.org/wp-content/uploads/2019/11/Baglole-et-al.-2006-Am-J-Physiol-Cell-Mol-Physiol.pdf">pdf</a></p>
+<p class="">Baglole, C. J., <strong>Bushinsky, S. M.</strong>, Garcia, T. M., Kode, A., Rahman, I., Sime, P. J., & Phipps, R. P. (2006). Differential induction of apoptosis by cigarette smoke extract in primary human lung fibroblast strains: implications for emphysema.&nbsp;<em>Am J Physiol Cell Mol Physiol</em>,&nbsp;<em>291</em>, L19–L29. <a href="https://doi.org/10.1152/ajplung.00306.2005">https://doi.org/10.1152/ajplung.00306.2005</a>. <a href="https://bushinskyoceanlab.org/wp-content/uploads/2019/11/Baglole-et-al.-2006-Am-J-Physiol-Cell-Mol-Physiol.pdf">pdf</a></p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>
