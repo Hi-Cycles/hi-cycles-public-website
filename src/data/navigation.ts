@@ -1,7 +1,7 @@
 export type NavItem = { title: string; href: string };
 
 export const mainNav: NavItem[] = [
-  { title: "", href: "/111-2" },
+  { title: "111-2", href: "/111-2" },
   { title: "Code", href: "/code" },
   { title: "Funded projects:", href: "/funded-projects" },
   { title: "News", href: "/news" },

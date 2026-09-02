@@ -1,12 +1,7 @@
 ---
-title: "People"
-slug: "people"
-originalLink: "https://bushinskyoceanlab.org/people/"
-wordpressId: 14
-route: "/people"
----
-
-<figure class="is-style-default wp-block-image size-large"><img src="https://bushinskyoceanlab.org/wp-content/uploads/Hi_Cycles_2024-1024x771.jpg" alt="HI Cycles group at the 10th annual SOCCOM meeting at Princeton University. June 2024." class="wp-image-761"/><figcaption class="wp-element-caption">HI Cycles group at the 10th annual SOCCOM meeting at Princeton University. June 2024.</figcaption></figure>
+import Layout from "../layouts/Layout.astro";
+const title = "People";
+const html = `<figure class="is-style-default wp-block-image size-large"><img src="https://bushinskyoceanlab.org/wp-content/uploads/Hi_Cycles_2024-1024x771.jpg" alt="HI Cycles group at the 10th annual SOCCOM meeting at Princeton University. June 2024." class="wp-image-761"/><figcaption class="wp-element-caption">HI Cycles group at the 10th annual SOCCOM meeting at Princeton University. June 2024.</figcaption></figure>
 
 
 
@@ -262,4 +257,11 @@ route: "/people"
 
 
 
-<p class=""><a href="https://beta.nsf.gov/funding/opportunities/ocean-sciences-postdoctoral-research-fellowships-oce-prf-0">NSF Ocean Sciences Postdoctoral Research Fellowship</a> (must be a U.S. citizen, national, or permanent resident)</p>
+<p class=""><a href="https://beta.nsf.gov/funding/opportunities/ocean-sciences-postdoctoral-research-fellowships-oce-prf-0">NSF Ocean Sciences Postdoctoral Research Fellowship</a> (must be a U.S. citizen, national, or permanent resident)</p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

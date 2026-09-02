@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+const title = "News";
+const html = `<p>News</p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

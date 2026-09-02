@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+const title = "New modules for OCN 201 developed, in part, based on my funded research projects";
+const html = `<p class="">All work here is available for non-profit teaching purposes only, with attribution. Feel free to modify as needed and let me know of errors or suggestions for improvement.</p>
+
+
+
+<p class="">Gas solubility and exchange: How and why gases get in and out of the Ocean</p>
+
+
+
+
+
+<p class="">Ocean Carbon Uptake: Natural and Anthropogenic&nbsp;</p>
+
+
+
+
+
+<p class="">Oxygen in the Ocean: Where did it come from? Where did it go?</p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>

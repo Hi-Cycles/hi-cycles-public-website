@@ -1,12 +1,7 @@
 ---
-title: "Teaching / Service"
-slug: "teaching"
-originalLink: "https://bushinskyoceanlab.org/teaching/"
-wordpressId: 218
-route: "/teaching"
----
-
-<h2 class="wp-block-heading"><strong>Teaching:</strong></h2>
+import Layout from "../layouts/Layout.astro";
+const title = "Teaching / Service";
+const html = `<h2 class="wp-block-heading"><strong>Teaching:</strong></h2>
 
 
 
@@ -78,4 +73,11 @@ route: "/teaching"
 
 
 
-<p class=""></p>
+<p class=""></p>`;
+---
+
+<Layout title={title}>
+  <main class="content">
+    <article set:html={html} />
+  </main>
+</Layout>
