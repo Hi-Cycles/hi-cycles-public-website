@@ -75,12 +75,18 @@ function escTemplateLiteral(s) {
   return (s || "").replace(/`/g, "\\`").replace(/\$\{/g, "\\${");
 }
 
-function toAstroPage({ title, html }) {
+function toAstroPage({ title, html, route }) {
   const safeTitle = (title || "Untitled").replace(/"/g, '\\"');
   const safeHtml = escTemplateLiteral(html || "");
 
+  // route "/" => depth 0 (src/pages/index.astro)
+  // route "/research/oxygen-sensor-calibration" => depth 2
+  const depth = route === "/" ? 0 : route.split("/").filter(Boolean).length;
+  const up = depth === 0 ? ".." : "../".repeat(depth) + "..";
+  const layoutImport = `${up}/layouts/Layout.astro`.replace(/\/+/g, "/");
+
   return `---
-import Layout from "../layouts/Layout.astro";
+import Layout from "${layoutImport}";
 const title = "${safeTitle}";
 const html = \`${safeHtml}\`;
 ---
@@ -174,6 +180,7 @@ for (const p of withRoutes) {
   const file = toAstroPage({
     title: p.title || p.slug || "Untitled",
     html: p.content || `<p>${p.title || p.slug}</p>`,
+    route: p.route,
   });
 
   fs.writeFileSync(outPath, file, "utf8");
