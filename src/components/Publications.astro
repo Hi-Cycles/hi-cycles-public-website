@@ -1,0 +1,39 @@
+---
+import { parseBibFile } from '@retorquere/bibtex-parser';
+import bibRaw from '../assets/Exported Items.bib?raw';
+
+const { entries } = parseBibFile(bibRaw);
+
+// group by year, newest first
+const byYear = new Map<string, typeof entries>();
+for (const entry of entries) {
+	const year = entry.fields.year?.[0] ?? 'n.d.';
+	if (!byYear.has(year)) byYear.set(year, []);
+	byYear.get(year)!.push(entry);
+}
+const years = [...byYear.keys()].sort((a, b) => (a === 'n.d.' ? -1 : b === 'n.d.' ? 1 : Number(b) - Number(a)));
+
+function formatAuthors(entry: (typeof entries)[number]) {
+	const creators = entry.creators?.author ?? [];
+	return creators.map((c) => `${c.lastName}, ${c.firstName?.[0] ?? ''}.`).join(', ');
+}
+---
+
+{years.map((year) => (
+	<Fragment>
+		<h2>{year}</h2>
+		<ul>
+			{byYear.get(year)!.map((entry) => (
+				<li>
+					{formatAuthors(entry)} ({year}). {entry.fields.title?.[0]}.{' '}
+					{entry.fields.journal?.[0] && <em>{entry.fields.journal[0]}</em>}
+					{entry.fields.volume?.[0] && `, ${entry.fields.volume[0]}`}
+					{entry.fields.pages?.[0] && `, ${entry.fields.pages[0]}`}.{' '}
+					{entry.fields.doi?.[0] && (
+						<a href={`https://doi.org/${entry.fields.doi[0]}`}>https://doi.org/{entry.fields.doi[0]}</a>
+					)}
+				</li>
+			))}
+		</ul>
+	</Fragment>
+))}

@@ -1,20 +1,23 @@
 ---
-title: Welcome to Hi-Cycles
-description: The laboratory website for the Hi-Cycles research group at the University of Hawai'i at Mānoa.
-template: splash
+title: HI-Cycles
+description: Website for the HI-Cycles group at the University of Hawaii at Manoa Department of Oceanography, led by Seth Bushinsky.
+template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Ocean biogeochemistry research at the University of Hawai'i at Mānoa.
+  tagline: Global Ocean Biogeochemistry at UH Mānoa
+  image:
+    file: ../../assets/images/Logo_Badge@2x-80.jpg
   actions:
-    - text: Learn more
-      link: https://hi-cycles.org
-      icon: external
+    - text: Learn about our research
+      link: /research/
+      icon: right-arrow
 ---
 
-## About
+import { Image } from 'astro:assets';
+import photo from '../../assets/images/people/Bushinsky_photo_small.jpg';
 
-The Hi-Cycles lab investigates biogeochemical cycles in the ocean, with a focus on
-the processes that govern oxygen and carbon exchange between the ocean and atmosphere.
 
-Our work spans multiple scales — from improving ocean sensors and understanding
-biological and physical mechanisms at the process level, to quantifying regional and
-global air-sea fluxes.
+I started as an Assistant Professor at the University of Hawai’i at Mānoa in July 2019. My research interests are centered around biogeochemical cycles in the ocean, especially the processes that control oxygen and carbon exchange between the ocean and atmosphere.
+
+I work across a number of scales – from understanding and improving sensors, to process level understanding of how biological and physical mechanisms impact ocean biogeochemistry, to quantifying regional and global air-sea fluxes. This field requires an understanding of chemistry, biology, and physics (or good collaborators who do) which is what makes it so challenging and fun.
+
+<Image src={photo} alt="Seth Bushinsky" width={300} />

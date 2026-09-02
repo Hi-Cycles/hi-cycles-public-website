@@ -1,16 +1,21 @@
 {
-  "name": "hi-cycles-public-website",
+  "name": "faithful-filament",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "CHOKIDAR_USEPOLLING=true CHOKIDAR_INTERVAL=100 astro dev",
+    "start": "CHOKIDAR_USEPOLLING=true CHOKIDAR_INTERVAL=100 astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.11",
-    "astro": "^7.2.10",
-    "sharp": "^0.35.4"
+    "@retorquere/bibtex-parser": "^10.0.1",
+    "astro": "^7.1.6",
+    "sharp": "^0.35.3"
+  },
+  "allowScripts": {
+    "esbuild": true
   }
 }
