@@ -21,6 +21,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'HI-Cycles',
+			favicon: '/favicon.png',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Hi-Cycles/' }],
 			sidebar: [
 				{
@@ -28,10 +29,27 @@ export default defineConfig({
 					items: [{ label: 'Projects', slug: 'research' },
 						 { label: 'Publications', slug: 'publications' }],
 				},
-				// {
-				// 	label: 'Publications',
-				// 	items: [{ label: 'Publications', slug: 'publications' }],
-				// },
+				{
+					label: 'People',
+					items: [{ label: 'Group Members', slug: 'people' }],
+				},
+				{
+					label: 'Teaching',
+					items: [{ label: 'OCN 623: Chemical Oceanography', slug: 'ocn623' },
+					{ label: 'OCN 201: Science of the Sea', slug: 'ocn201' },
+					],
+				},
+				{
+					label: 'Service',
+					items: [{ label: 'Kahuliau', slug: 'kahuliau' },
+					],
+				},
+				{
+					label: 'Outreach',
+					items: [{ label: 'Lego float building', slug: 'legos' },
+					{ label: '3D Printed Floats', slug: '3d-printed-floats' },
+					],
+				},
 				// {
 				// 	label: 'Guides',
 				// 	items: [
