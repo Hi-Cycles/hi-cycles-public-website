@@ -31,7 +31,9 @@ export default defineConfig({
 				},
 				{
 					label: 'People',
-					items: [{ label: 'Group Members', slug: 'people' }],
+					items: [{ label: 'Group Members', slug: 'people' },
+						{ label: 'Example personal page', slug: 'example_page' }
+					],
 				},
 				{
 					label: 'Teaching',
