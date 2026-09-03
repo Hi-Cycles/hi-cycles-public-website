@@ -31,7 +31,7 @@ export default defineConfig({
 				},
 				{
 					label: 'People',
-					items: [{ label: 'Group Members', slug: 'people' }],
+					items: [{ label: 'Group Members', slug: 'people' }, { label: 'Raphaël Bajon', slug: 'raphael' }],
 				},
 				{
 					label: 'Teaching',
