@@ -6,8 +6,6 @@
 npm create astro@latest -- --template starlight
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
 ## 🚀 Project Structure
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
@@ -43,6 +41,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+You need `npm` installed to run the commands listed above. You can download `Node.js` and `npm` from [https://nodejs.org/en/download](https://nodejs.org/en/download).
 
 ## 👀 Want to learn more?
 
