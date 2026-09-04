@@ -109,3 +109,41 @@ const shouldRenderSearch =
 		}
 	}
 </style>
+
+<script>
+	if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		const targets = document.querySelectorAll<HTMLElement>('.hc-card, .hc-reveal');
+		const io = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('is-visible');
+						io.unobserve(entry.target);
+					}
+				}
+			},
+			{ threshold: 0.15 }
+		);
+		targets.forEach((el, i) => {
+			el.classList.add('hc-reveal-pending');
+			el.style.transitionDelay = `${Math.min(i * 60, 300)}ms`;
+			io.observe(el);
+		});
+	}
+
+	// The `autoplay` attribute alone isn't reliably honored in every browser,
+	// especially for videos rendered inside a component. Explicitly (re-)play
+	// muted autoplay videos once they're ready, as a robust fallback.
+	document.querySelectorAll<HTMLVideoElement>('video[autoplay]').forEach((video) => {
+		video.muted = true;
+		const tryPlay = () =>
+			video.play().catch((err) => {
+				console.warn('[hc-video] autoplay blocked for', video.currentSrc || video.src, '-', err.name, err.message);
+			});
+		if (video.readyState >= 2) {
+			tryPlay();
+		} else {
+			video.addEventListener('loadeddata', tryPlay, { once: true });
+		}
+	});
+</script>

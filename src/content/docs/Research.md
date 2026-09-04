@@ -16,3 +16,10 @@ Fortunately, as part of the SOCCOM project, BGCArgo floats are deployed to colle
 ## InMOS
 
 The Integrated Marine Observing System ([InMOS](https://inmos.org)) project focuses on developing and deploying advanced observing technologies to monitor and understand marine environments.
+
+## BGCArgo+: quality-controlled biogeochemical Argo dataset
+
+The BGCArgo+ dataset is a quality-controlled compilation of biogeochemical Argo float data. The main access to this dataset is through the [BGCArgo+ website](https://www.bgc-argo-plus.info), where users can download and explore the data for research and analysis purposes.
+
+<video src="/videos/bgc-float-deployment.mp4" autoplay muted loop playsinline style="width:100%; max-width:800px; border-radius:0.5rem; display:block; margin:1.5rem 0;"></video>
+

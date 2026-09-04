@@ -26,6 +26,7 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			components: {
 				Header: './src/components/Header.astro',
+				Hero: './src/components/Hero.astro',
 			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Hi-Cycles/' }],
 			sidebar: [

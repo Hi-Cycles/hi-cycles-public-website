@@ -1,0 +1,25 @@
+---
+import Default from '@astrojs/starlight/components/Hero.astro';
+---
+
+<div class="hero-bg-wrap">
+	<Default />
+</div>
+
+<style>
+	@media (prefers-reduced-motion: no-preference) {
+		.hero-bg-wrap :global(.hero img) {
+			animation: hero-logo-bob 4s ease-in-out infinite;
+		}
+	}
+
+	@keyframes hero-logo-bob {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+</style>
