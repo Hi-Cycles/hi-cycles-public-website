@@ -38,7 +38,7 @@ export default defineConfig({
 					label: 'People',
 					items: [
 						{ label: 'All Group Members', slug: 'people' }, 
-						{ label: 'Raphaël Bajon', slug: 'raphael' }],
+						{ label: 'Raphaël Bajon', slug: 'raphael' }, { label: 'Example personal page', slug: 'example_page' }],
 				},
 				{
 					label: 'Teaching',
