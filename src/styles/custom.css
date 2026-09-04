@@ -147,3 +147,18 @@ a.hc-card:hover {
 .hc-grid > :nth-child(4n + 4) {
 	--hc-accent: var(--sl-color-red);
 }
+
+/* Scroll-reveal fade-in. Default state is fully visible (progressive
+   enhancement): the .hc-reveal-pending class is only ever added by JS
+   (see Header.astro), so no-JS / prefers-reduced-motion visitors always
+   see normal, immediately-visible content. */
+.hc-reveal-pending {
+	opacity: 0;
+	transform: translateY(16px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hc-reveal-pending.is-visible {
+	opacity: 1;
+	transform: none;
+}
