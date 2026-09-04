@@ -1,0 +1,149 @@
+/*
+ * Palette sampled from src/assets/images/logo_hi-cycles.png:
+ * navy/mid-blue rings ~hue 216, gold float ~hue 38, teal arc ~hue 165, red arc ~hue 3.
+ */
+:root,
+::backdrop {
+	--sl-hue-orange: 38;
+	--sl-hue-green: 165;
+	--sl-hue-red: 3;
+	--sl-hue-purple: 216;
+
+	--sl-color-accent-low: hsl(216, 54%, 20%);
+	--sl-color-accent: hsl(216, 72%, 58%);
+	--sl-color-accent-high: hsl(216, 100%, 85%);
+}
+
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+	--sl-color-accent-high: hsl(216, 80%, 28%);
+	--sl-color-accent: hsl(216, 78%, 44%);
+	--sl-color-accent-low: hsl(216, 70%, 90%);
+}
+
+.card {
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover {
+	transform: translateY(-2px);
+	box-shadow: var(--sl-shadow-md);
+}
+
+.sl-link-button {
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.sl-link-button:hover {
+	transform: translateY(-1px);
+}
+
+/* Clickable, color-coded tile grid used on the homepage and the People page.
+   Uses flexbox rather than CSS Grid: some Chromium versions mis-stretch a
+   single item's row-track height when using `grid-template-columns: repeat
+   (auto-fill, minmax(...))` with `align-items: stretch`, producing a card
+   that is the right height but shifted out of line with its row. Flexbox's
+   per-line stretch (the default `align-items: stretch`) doesn't have that
+   failure mode, so equal-height wrapping cards are handled natively. */
+.hc-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	margin: 1.5rem 0;
+}
+
+.hc-card {
+	--hc-accent: var(--sl-color-blue);
+	flex: 1 1 11rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.5rem;
+	padding: 1.75rem 1.25rem;
+	border: 1px solid var(--sl-color-gray-5);
+	border-top: 3px solid var(--hc-accent);
+	border-radius: 0.75rem;
+	background: var(--sl-color-black);
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+	/* Starlight's own markdown spacing rule (@layer starlight.content) adds a
+	   margin-top between adjacent block-level siblings, but skips it when the
+	   preceding sibling is an <a> — so some cards got it and others didn't,
+	   throwing off row alignment. Spacing between cards is handled by
+	   .hc-grid's `gap`, so this always needs to be zero. */
+	margin-top: 0;
+}
+
+a.hc-card:hover {
+	transform: translateY(-4px) scale(1.02);
+	box-shadow: var(--sl-shadow-lg);
+	border-color: var(--hc-accent);
+}
+
+.hc-card .hc-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--hc-accent) 20%, transparent);
+	color: var(--hc-accent);
+}
+
+.hc-card .hc-avatar,
+.hc-card .hc-avatar-fallback {
+	width: 5.5rem;
+	height: 5.5rem;
+	border-radius: 999px;
+	border: 3px solid var(--hc-accent);
+}
+
+.hc-card .hc-avatar {
+	object-fit: cover;
+}
+
+.hc-card .hc-avatar-fallback {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 1.5rem;
+	background: color-mix(in srgb, var(--hc-accent) 15%, transparent);
+	color: var(--hc-accent);
+}
+
+.hc-card .hc-title {
+	font-weight: 600;
+	color: var(--sl-color-white);
+}
+
+.hc-card .hc-desc {
+	font-size: var(--sl-text-sm);
+	color: var(--sl-color-gray-3);
+	line-height: 1.4;
+	/* Reserve space for two lines so 1-line and 2-line descriptions don't
+	   produce different natural card heights within the same grid row. */
+	min-height: 2.8em;
+	display: flex;
+	align-items: center;
+}
+
+/* The homepage feature grid has longer, more variable-length descriptions
+   than the people-avatar grids, so it needs more reserved space (3 lines). */
+.hc-grid-features .hc-desc {
+	min-height: 4.2em;
+}
+
+.hc-grid > :nth-child(4n + 1) {
+	--hc-accent: var(--sl-color-orange);
+}
+.hc-grid > :nth-child(4n + 2) {
+	--hc-accent: var(--sl-color-purple);
+}
+.hc-grid > :nth-child(4n + 3) {
+	--hc-accent: var(--sl-color-green);
+}
+.hc-grid > :nth-child(4n + 4) {
+	--hc-accent: var(--sl-color-red);
+}

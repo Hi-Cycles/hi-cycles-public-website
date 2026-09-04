@@ -5,7 +5,7 @@ template: splash # Remove or comment out this line to display the site sidebar o
 hero:
   tagline: Global Ocean Biogeochemistry at UH Mānoa
   image:
-    file: ../../assets/images/Logo_Badge@2x-80.jpg
+    file: ../../assets/images/logo_hi-cycles_badge.png
   actions:
     - text: Learn about our research
       link: /research/
@@ -13,11 +13,74 @@ hero:
 ---
 
 import { Image } from 'astro:assets';
+import { Icon } from '@astrojs/starlight/components';
+import Carousel from '../../components/Carousel.astro';
 import photo from '../../assets/images/people/Bushinsky_photo_small.jpg';
+import groupPhoto from '../../assets/images/people/Hi_Cycles_2024.jpg';
+import badgePhoto from '../../assets/images/logo_hi-cycles_badge.png';
 
+export const featureSlides = [
+	{
+		image: groupPhoto,
+		alt: 'The HI-Cycles group',
+		caption: 'Meet the HI-Cycles Team',
+		description: 'Students, postdocs, and collaborators working on ocean biogeochemistry at UH Mānoa.',
+		href: '/people/',
+		linkText: 'Meet the group',
+	},
+	{
+		image: badgePhoto,
+		alt: 'HI-Cycles research badge',
+		caption: 'Global Ocean Biogeochemistry Research',
+		description: 'BGC-Argo floats, air-sea gas exchange, and carbon flux mapping.',
+		href: '/research/',
+		linkText: 'Explore our research',
+	},
+];
+
+
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; margin-bottom:2rem;">
+	<Image src={photo} alt="Seth Bushinsky" width={260} style="border-radius:0.5rem; flex-shrink:0; width:260px; height:auto;" />
+	<div style="flex:1; min-width:260px;">
 
 I started as an Assistant Professor at the University of Hawai’i at Mānoa in July 2019. My research interests are centered around biogeochemical cycles in the ocean, especially the processes that control oxygen and carbon exchange between the ocean and atmosphere.
 
 I work across a number of scales – from understanding and improving sensors, to process level understanding of how biological and physical mechanisms impact ocean biogeochemistry, to quantifying regional and global air-sea fluxes. This field requires an understanding of chemistry, biology, and physics (or good collaborators who do) which is what makes it so challenging and fun.
 
-<Image src={photo} alt="Seth Bushinsky" width={300} />
+	</div>
+</div>
+
+## What we do
+
+<div class="hc-grid hc-grid-features">
+	<a class="hc-card" href="/research/">
+		<span class="hc-icon"><Icon name="rocket" size="1.5rem" /></span>
+		<span class="hc-title">Research</span>
+		<span class="hc-desc">Ocean carbon fluxes, air-sea gas exchange, and BGC-Argo floats.</span>
+	</a>
+	<a class="hc-card" href="/publications/">
+		<span class="hc-icon"><Icon name="document" size="1.5rem" /></span>
+		<span class="hc-title">Publications</span>
+		<span class="hc-desc">Peer-reviewed papers on Southern Ocean carbon and global oxygen budgets.</span>
+	</a>
+	<a class="hc-card" href="/people/">
+		<span class="hc-icon"><Icon name="star" size="1.5rem" /></span>
+		<span class="hc-title">People</span>
+		<span class="hc-desc">Meet the students, postdocs, and collaborators behind the science.</span>
+	</a>
+	<a class="hc-card" href="/legos/">
+		<span class="hc-icon"><Icon name="heart" size="1.5rem" /></span>
+		<span class="hc-title">Outreach</span>
+		<span class="hc-desc">Bringing ocean science to classrooms and the community.</span>
+	</a>
+</div>
+
+## Recent Publications
+
+- McClish, S., Bushinsky, S., Briggs, N., Cerovečki, I., & Douglas, C. (2026). Seasonal Re-Entrainment of Respired Organic Matter Decouples Southern Ocean Surface Production and Annual Net Community Production. *AGU Advances*, 7(5). [doi.org/10.1029/2025AV002267](https://doi.org/10.1029/2025AV002267)
+- Arteaga, L. A., Rousseaux, C. S., Cetinić, I., & Bushinsky, S. (2026). Extreme 2016 El Niño heatwave weakened carbon export and respiration in the Equatorial Pacific. *Communications Earth & Environment*. [doi.org/10.1038/s43247-026-03441-y](https://doi.org/10.1038/s43247-026-03441-y)
+- Rustogi, P., Resplandy, L., Bushinsky, S., & Deike, L. (2026). The influence of waves and bubbles on oxygen in the ocean interior. *Environmental Research Letters*, 21(9). [doi.org/10.1088/1748-9326/ae612b](https://doi.org/10.1088/1748-9326/ae612b)
+
+[See all publications →](/publications/)
+
+<Carousel slides={featureSlides} />

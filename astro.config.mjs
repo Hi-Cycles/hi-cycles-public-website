@@ -22,6 +22,11 @@ export default defineConfig({
 		starlight({
 			title: 'HI-Cycles',
 			favicon: '/favicon.png',
+			logo: { src: './src/assets/images/logo_hi-cycles_badge.png', alt: 'HI-Cycles logo' },
+			customCss: ['./src/styles/custom.css'],
+			components: {
+				Header: './src/components/Header.astro',
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/Hi-Cycles/' }],
 			sidebar: [
 				{
@@ -31,7 +36,9 @@ export default defineConfig({
 				},
 				{
 					label: 'People',
-					items: [{ label: 'Group Members', slug: 'people' }, { label: 'Raphaël Bajon', slug: 'raphael' }],
+					items: [
+						{ label: 'All Group Members', slug: 'people' }, 
+						{ label: 'Raphaël Bajon', slug: 'raphael' }],
 				},
 				{
 					label: 'Teaching',
@@ -49,6 +56,10 @@ export default defineConfig({
 					items: [{ label: 'Lego float building', slug: 'legos' },
 					{ label: '3D Printed Floats', slug: '3d-printed-floats' },
 					],
+				},
+				{
+					label: 'News',
+					items: [{ label: 'Sciences related', slug: 'news' }],
 				},
 				// {
 				// 	label: 'Guides',
