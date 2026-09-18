@@ -44,7 +44,7 @@ export default defineConfig({
 						{ label: 'Raphaël Bajon', slug: 'people/raphael' }, 
 						{ label: 'Haichao Guo', slug: 'people/haichao' },
 						{ label: 'Xiang Yang', slug: 'people/xiang' },
-						{ label: 'Example personal page', slug: 'example_page' }],
+						],
 				},
 				{
 					label: 'Teaching',

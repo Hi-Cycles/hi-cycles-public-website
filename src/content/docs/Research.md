@@ -3,6 +3,8 @@ title: Research Projects
 description: An overview of the topics we work on.
 ---
 
+An overview of the topics we work on. 
+
 ## SOCCOM
 
 The Southern Ocean Carbon and Climate Observations and Modeling ([SOCCOM](https://soccom.org)) project aims to understand the role of the Southern Ocean in the global carbon cycle and climate system.
