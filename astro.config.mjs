@@ -41,6 +41,7 @@ export default defineConfig({
 					items: [
 						{ label: 'All Group Members', slug: 'people' }, 
 						{ label: 'Ally Morris', slug: 'people/ally' },
+						{ label: 'Zack Nachod', slug: 'people/zack' },
 						{ label: 'Raphaël Bajon', slug: 'people/raphael' }, 
 						{ label: 'Haichao Guo', slug: 'people/haichao' },
 						{ label: 'Xiang Yang', slug: 'people/xiang' },
