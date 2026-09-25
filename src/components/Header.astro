@@ -146,4 +146,21 @@ const shouldRenderSearch =
 			video.addEventListener('loadeddata', tryPlay, { once: true });
 		}
 	});
+
+	const mapImage = document.querySelector<HTMLImageElement>('img[usemap="#pacficmap"]');
+	const mapAreas = document.querySelectorAll<HTMLAreaElement>('map[name="pacficmap"] area[data-coords]');
+	if (mapImage && mapAreas.length) {
+		const resizeMap = () => {
+			const scale = mapImage.clientWidth / mapImage.naturalWidth;
+			mapAreas.forEach((area) => {
+				area.coords = area.dataset.coords!
+					.split(',')
+					.map((value) => Math.round(Number(value) * scale))
+					.join(',');
+			});
+		};
+		mapImage.addEventListener('load', resizeMap);
+		new ResizeObserver(resizeMap).observe(mapImage);
+		resizeMap();
+	}
 </script>
