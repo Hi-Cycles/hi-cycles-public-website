@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://hi-cycles.org',
 	vite: {
 		server: {
 			watch: {
@@ -39,7 +40,11 @@ export default defineConfig({
 					label: 'People',
 					items: [
 						{ label: 'All Group Members', slug: 'people' }, 
-						{ label: 'Raphaël Bajon', slug: 'people/raphael' },{ label: 'Haichao Guo', slug: 'people/haichao' },
+						{ label: 'Ally Morris', slug: 'people/ally' },
+						{ label: 'Zack Nachod', slug: 'people/zack' },
+						{ label: 'Raphaël Bajon', slug: 'people/raphael' }, 
+						{ label: 'Haichao Guo', slug: 'people/haichao' },
+						{ label: 'Xiang Yang', slug: 'people/xiang' },
 						],
 				},
 				{
