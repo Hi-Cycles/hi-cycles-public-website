@@ -2,26 +2,64 @@
 title: Research Projects
 description: An overview of the topics we work on.
 ---
+Our projects are all connected to biogeochemical processes: how they work, what their importance/magnitude is, and how can we better measure or understand them? They can be roughly categorized into 6 areas listed on the map below. Click on a topic to learn more.
 
-An overview of the topics we work on. 
 
-## SOCCOM
+<img src="/images/gridded_o2_pacific_v1.0_2026_08_annotated2.png" alt="Gridded_O2" usemap="#pacficmap">
 
-The Southern Ocean Carbon and Climate Observations and Modeling ([SOCCOM](https://soccom.org)) project aims to understand the role of the Southern Ocean in the global carbon cycle and climate system.
+<map name="pacficmap">
+  <area
+  shape="rect"
+  data-coords="480, 610, 1602, 749"
+  coords="480, 610, 1602, 749"
+  alt="Southern Ocean"
+  href="/research_projects/southern-ocean/"
+>
+  <area
+  shape="rect"
+  data-coords="1780, 510, 3191, 674"
+  coords="1780, 510, 3191, 674"
+  alt="Gas Exchange"
+  href="/research_projects/air-sea-gas-exchange/"
+>
+  <area
+  shape="rect"
+  data-coords="380, 1010, 2285, 1174"
+  coords="380, 1010, 2285, 1174"
+  alt="Mode Water biogeochemistry"
+  href="/research_projects/mode-water/"
+>
+  <area
+  shape="rect"
+  data-coords="1980, 811, 3575, 974"
+  coords="1980, 811, 3575, 974"
+  alt="Biological carbon export"
+  href="/research_projects/biological-carbon-export/"
+>
+  <area
+  shape="rect"
+  data-coords="1280, 2210, 3377, 2374"
+  coords="1280, 2210, 3377, 2374"
+  alt="Interior biogeochemical changes"
+  href="/research_projects/bgc-changes/"
+>
+  <area
+  shape="rect"
+  data-coords="1980, 1911, 4153, 2074"
+  coords="1980, 1911, 4153, 2074"
+  alt="Float measurements and accuracy"
+  href="/research_projects/float-obs-accuracy/"
+>
+  <!-- <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"> 
+  1. Southern Ocean (480, 610, 1602, 749)
+2. Air-sea gas exchange (1780, 510, 3191, 674)
+3. Mode Water biogeochemistry (380, 1010, 2285, 1174)
+4. Biological carbon export (1980, 811, 3575, 974)
+5. Interior biogeochemical changes (1280, 2210, 3377, 2374)
+6. Float measurements and accuracy (1980, 1911, 4153, 2074)
+image size (w, h): (4400, 3600)
+-->
+</map>
 
-### Global air-sea CO2 flux estimates leveraging both ship and corrected BGC Argo observations
-
-The Global Ocean Carbon uptake shows significant variability and uncertainty, as depicted by last Global Carbon Project (GCB) studies. Most of the *p*CO2 data used by mapping algorithms in GCB come from ship-based observations, which are sparse in both space and time, generally north hemisphere and summer dependent.
-
-Fortunately, as part of the SOCCOM project, BGCArgo floats are deployed to collect biogeochemical data in the Southern Ocean, where ship-based observations are limited, increasing the spatial and temporal coverage of *p*CO2 measurements. These newly added BGCArgo data are adjusted and combined with SOCAT observations to help constrained global air-sea CO2 flux estimates, finally improving estimates of global ocean carbon uptake.
-
-## InMOS
-
-The Integrated Marine Observing System ([InMOS](https://inmos.org)) project focuses on developing and deploying advanced observing technologies to monitor and understand marine environments.
-
-## BGCArgo+: quality-controlled biogeochemical Argo dataset
-
-The BGCArgo+ dataset is a quality-controlled compilation of biogeochemical Argo float data. The main access to this dataset is through the [BGCArgo+ website](https://www.bgc-argo-plus.info), where users can download and explore the data for research and analysis purposes.
-
-<video src="/videos/bgc-float-deployment.mp4" autoplay muted loop playsinline style="width:100%; max-width:800px; border-radius:0.5rem; display:block; margin:1.5rem 0;"></video>
-
+[A complete list of current and past funded projects.](/research_projects/funded-projects/)

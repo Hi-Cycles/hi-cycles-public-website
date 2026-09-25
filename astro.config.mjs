@@ -68,17 +68,6 @@ export default defineConfig({
 					label: 'News',
 					items: [{ label: 'Sciences related', slug: 'news' }],
 				},
-				// {
-				// 	label: 'Guides',
-				// 	items: [
-				// 		// Each item here is one entry in the navigation menu.
-				// 		{ label: 'Example Guide', slug: 'guides/example' },
-				// 	],
-				// },
-				// {
-				// 	label: 'Reference',
-				// 	items: [{ autogenerate: { directory: 'reference' } }],
-				// },
 			],
 		}),
 	],
