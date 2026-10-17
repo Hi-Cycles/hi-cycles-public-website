@@ -1,7 +1,6 @@
 ---
-title: Example page
-description: Test page for a personal site. 
+title: Work in progress
+description: Test page. 
 ---
 
-# Talk about research, goals, etc.
-asdfasd 
+# Nothing here yet...

@@ -103,6 +103,12 @@ a.hc-card:hover {
 	object-fit: cover;
 }
 
+.hc-card .hc-project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 .hc-card .hc-avatar-fallback {
 	display: flex;
 	align-items: center;
