@@ -39,12 +39,9 @@ export default defineConfig({
 				{
 					label: 'People',
 					items: [
-						{ label: 'All Group Members', slug: 'people' }, 
-						{ label: 'Ally Morris', slug: 'people/ally' },
-						{ label: 'Zack Nachod', slug: 'people/zack' },
-						{ label: 'Raphaël Bajon', slug: 'people/raphael' }, 
-						{ label: 'Haichao Guo', slug: 'people/haichao' },
-						{ label: 'Xiang Yang', slug: 'people/xiang' },
+						{ label: 'Current Group Members', slug: 'people' },
+						{ label: 'Alumni', link: '/people/#alumni' }, { label: 'Information for prospective students/postdocs', link: '/people/#information-for-prospective-students-and-postdocs' }
+						
 						],
 				},
 				{
